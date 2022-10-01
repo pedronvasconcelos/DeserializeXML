@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Pessoas>
+  <Pessoa>
+    <Nome>Joao</Nome>
+    <Idade>22</Idade>
+    <Endereco>
+      <Rua>Rua 1</Rua>
+      <Cidade>Belo Horizonte</Cidade>
+    </Endereco>
+	<Hobbies>
+	  <Principal>Correr</Principal>
+	  <Secundario>Ler</Secundario>
+    </Hobbies>
+  </Pessoa>
+  <Pessoa>
+    <Nome>Maria</Nome>
+    <Idade>25</Idade>
+    <Endereco>
+      <Rua>Rua 12</Rua>
+      <Cidade>São Paulo</Cidade>
+    </Endereco>
+	 <Hobbies>
+	   <Principal>Programar</Principal>
+	   <Secundario>Jogar</Secundario>
+     </Hobbies>
+  </Pessoa>
+</Pessoas>
