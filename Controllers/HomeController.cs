@@ -18,7 +18,7 @@ namespace TestXML.Controllers
         [HttpGet]
         public ActionResult Get()
         {
-            string path = Directory.GetCurrentDirectory() + @"\File\convertjson.xml";
+            string path = Directory.GetCurrentDirectory() + @"\File\pessoas.xml";
 
             string input = System.IO.File.ReadAllText(path);
 
