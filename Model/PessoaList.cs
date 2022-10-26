@@ -5,7 +5,8 @@ namespace TestXML.Model
     [Serializable, XmlRoot("Pessoas")]
     public class Pessoas
     {
-        [XmlElement("Pessoa")]
-        public List<Pessoa> PessoaList { get; set; }
+        [XmlElement( "Pessoa")]
+              
+        public List<Pessoa> Pessoa { get; set; }
     }
 }

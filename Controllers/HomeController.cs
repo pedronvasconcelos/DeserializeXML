@@ -25,5 +25,15 @@ namespace TestXML.Controllers
             var customer = _xmlHelper.Deserialize<Pessoas>(input);
             return Ok(customer);
         }
+
+        [HttpPost]
+        [Consumes("text/xml")]
+        [Produces("text/json")]
+        public ActionResult Get(Pessoas pessoa)
+        {
+
+
+            return Ok(pessoa);
+        }
     }
 }

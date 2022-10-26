@@ -1,10 +1,14 @@
+using System.Xml.Serialization;
 using TestXML.Helpers;
+using TestXML.Model;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddXmlSerializerFormatters();
+
 builder.Services.AddScoped<IXmlHelper, XmlHelper>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
