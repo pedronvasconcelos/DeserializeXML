@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Runtime.Serialization.Json;
+using System.Text;
 using TestXML.Helpers;
 using TestXML.Model;
 
@@ -27,7 +28,7 @@ namespace TestXML.Controllers
         }
 
         [HttpPost]
-        [Consumes("text/xml")]
+        [Consumes("text/xml", "application/xml")]
         [Produces("text/json")]
         public ActionResult Get(Pessoas pessoa)
         {
