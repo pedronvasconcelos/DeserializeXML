@@ -1,12 +1,12 @@
-﻿using System.Xml.Serialization;
+﻿using System.Runtime.Serialization;
+using System.Xml.Serialization;
 
 namespace TestXML.Model
 {
-    [Serializable, XmlRoot("Pessoas")]
+    [DataContract(Name = "Pessoas", Namespace ="")]
     public class Pessoas
     {
-        [XmlElement( "Pessoa")]
-              
+        [DataMember(Name = "Pessoa")]              
         public List<Pessoa> Pessoa { get; set; }
     }
 }

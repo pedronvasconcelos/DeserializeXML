@@ -1,12 +1,14 @@
-﻿using System.Xml.Serialization;
+﻿using System.Runtime.Serialization;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace TestXML.Model
 {
     public class Endereco
     {
-        [XmlElement("Rua")]
+        [DataMember(Name = "Rua")]
         public string Rua { get; set; }
-        [XmlElement("Cidade")]
+        [DataMember(Name = "Cidade")]
         public string Cidade { get; set; }
     }
 }

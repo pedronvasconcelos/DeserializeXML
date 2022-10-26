@@ -1,14 +1,16 @@
-﻿using System.Xml.Serialization;
+﻿using System.Runtime.Serialization;
+using System.Xml.Linq;
+using System.Xml.Serialization;
 
 namespace TestXML.Model
 {
     public class Pessoa
     {
-        [XmlElement("Nome")]
+        [DataMember(Name = "Nome")]
         public string Nome { get; set; }
-        [XmlElement("Idade")]
+        [DataMember(Name = "Idade")]
         public string Idade { get; set; }
-        [XmlElement("Endereco")]
+        [DataMember(Name = "Endereco")]
         public Endereco Endereco { get; set; }
         [XmlElement("Hobbies")]
         public Hobbies Hobbies { get; set; }
